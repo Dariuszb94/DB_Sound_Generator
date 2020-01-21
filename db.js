@@ -5,7 +5,7 @@ const soundOnPad = {
 
 //Style for inactive pad
 const soundOffPad = {
-  backgroundColor: '#fcffc5' };
+  backgroundColor: '#828282' };
 
 
 //creating class for object with sound
@@ -20,16 +20,17 @@ class banking {
 const bank = []; //declaring object for sound
 
 //declaring 9 pads
-bank[0] = new banking(81, 'Q', 'Bright Punch', 'https://www.myinstants.com/media/sounds/dragon-ball-z-golpe-soco-forte-luta-strongpunch.mp3');
-bank[1] = new banking(87, 'W', 'Teleport', 'https://www.myinstants.com/media/sounds/dbz-teleport.mp3');
-bank[2] = new banking(69, 'E', 'Kamehameha', 'https://www.myinstants.com/media/sounds/kamehameha-wave-sound-effect.mp3');
-bank[3] = new banking(65, 'A', 'Intermission', 'https://www.myinstants.com/media/sounds/all-dragon-ball-eyecatch-intermission.mp3');
-bank[4] = new banking(83, 'S', 'Flying Nimbus', 'https://www.myinstants.com/media/sounds/dragon-ball-flying-nimbus-notification-sound.mp3');
-bank[5] = new banking(68, 'D', 'Whoosh', 'https://www.myinstants.com/media/sounds/123_7G7G85U.mp3');
-bank[6] = new banking(90, 'Z', 'SSJ Aura', 'https://www.myinstants.com/media/sounds/saiyan.mp3');
-bank[7] = new banking(88, 'X', 'SSJ2 Aura', 'https://www.myinstants.com/media/sounds/super-saiyan-2.mp3');
-bank[8] = new banking(67, 'C', 'Whoosh', 'https://www.myinstants.com/media/sounds/123_7G7G85U.mp3');
 
+
+bank[0] = new banking(81, 'Q', 'Shoot Arrow', 'http://soundbible.com/mp3/fire_bow_sound-mike-koenig.mp3');
+bank[1] = new banking(87, 'W', 'Teleport', 'https://www.myinstants.com/media/sounds/dbz-teleport.mp3');
+bank[2] = new banking(69, 'E', 'Air Wrench', 'http://soundbible.com/mp3/Air_Wrench_Short-Lightning_McQue-2139303794.mp3');
+bank[3] = new banking(65, 'A', 'Click', 'http://soundbible.com/mp3/Click2-Sebastian-759472264.mp3');
+bank[4] = new banking(83, 'S', 'Bright Punch', 'https://www.myinstants.com/media/sounds/dragon-ball-z-golpe-soco-forte-luta-strongpunch.mp3');
+bank[5] = new banking(68, 'D', 'Buzzer', 'http://soundbible.com/mp3/Short%20Circuit-SoundBible.com-1450168875.mp3');
+bank[6] = new banking(90, 'Z', 'SSJ Aura', 'https://www.myinstants.com/media/sounds/saiyan.mp3');
+bank[7] = new banking(88, 'X', 'Punch', 'http://soundbible.com/mp3/punch_or_whack_-Vladimir-403040765.mp3');
+bank[8] = new banking(67, 'C', 'Beep', 'http://soundbible.com/mp3/Short%20Beep%20Tone-SoundBible.com-1937840853.mp3');
 
 //React component(single pads)
 class DrumPad extends React.Component {
@@ -116,7 +117,7 @@ class App extends React.Component {
     });
     return (
       React.createElement("div", { id: "drum-machine", className: "inner-container" },
-      React.createElement("div", { id: "title" }, React.createElement("p", null, "Dragon Ball Sound Generator")),
+      React.createElement("div", { id: "title" }, React.createElement("p", null, "Sound Generator")),
       React.createElement("div", { className: "pad-bank" },
       padBank),
 
